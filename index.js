@@ -15,7 +15,8 @@ require('dotenv').config();
 
 
 const app = express()
-app.listen(1000, () => console.log('listening at port 1000'))
+const port = process.env.PORT || 1000
+app.listen(port, () => console.log(`starting server at port ${port}`)) //normally the port is set to 1000
 app.use(express.static('public'))
 app.use(express.json({limit: '1mb'}))
 
