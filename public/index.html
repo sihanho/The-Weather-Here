@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js" integrity="sha512-rCZdHNB0AePry6kAnKAVFMRfWPmUXSo+/vlGtrOUvhsxD0Punm/xWbEh+8vppPIOzKB9xnk42yCRZ5MD/jvvjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>3 Weather</title>
+    </head>
+
+    <body>
+        <h1>The Weather Here</h1>
+        <div><a href="/">check in</a> | <a href="logs/index.html">view checkins</a> </div>
+        <p>
+            latitude: <span id="latitude"></span>°<br/>
+            longtitude: <span id="longitude"></span>°
+        </p>
+
+        <p>
+            The weather here is <span id="summary"></span>.</br>
+            The temperatur is <span id="temperature"></span>°.
+        </p>
+
+        <p id="aq">
+            The concentration of particulate matter (<span id="aq_parameter"></span>) 
+            is <span id="aq_value"></span> <span id="aq_unit"></span>. </br>
+            Last update <span id="aq_lastUpdated"></span>
+        </p>
+
+        <!-- <button id="submit">check in</button> -->
+
+        <script src="sketch.js">
+        </script>  
+
+    </body>
+
+</html>
